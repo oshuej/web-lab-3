@@ -1,7 +1,6 @@
-var currentCount = 0;
-
 function createCounter() {
     // Реализуйте функцию, чтобы программа вывела на консоль ожидаемый результат
+    var currentCount = 0;
     return function() {
         return ++currentCount;
     };
@@ -15,3 +14,6 @@ count(); // 3
 count(); // 4
 
 console.log(count()); // 5
+
+const count2 = createCounter();
+console.log(count2());
